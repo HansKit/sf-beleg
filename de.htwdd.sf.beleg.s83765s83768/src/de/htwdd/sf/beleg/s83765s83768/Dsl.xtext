@@ -1,0 +1,19 @@
+grammar de.htwdd.sf.beleg.s83765s83768.Dsl with org.eclipse.xtext.common.Terminals
+
+generate dsl "http://www.htwdd.de/sf/beleg/s83765s83768/Dsl"
+
+Model:
+    stories+=Story*;
+
+Story:
+    title=Title dp=DOPPELPUNKT 'Um' benefit=Benefit 'möchte' 'ich' 'als' role=Role action=Action '.'; 
+
+Title:noun=NOUN verb=VERB_INFINTIV;
+Benefit:noun=NOUN pzvi=PREFIX_ZU_VERB_INFINTIV;
+Role: noun=NOUN;
+Action: noun=NOUN vi=VERB_INFINTIV;
+
+terminal NOUN: ('A'..'Z' | 'Ä' | 'Ö' | 'Ü')('a'..'z' | 'ä' | 'ö' | 'ü')*;
+terminal PREFIX_ZU_VERB_INFINTIV: ('a'..'z' | 'ä' | 'ö' | 'ü')* 'zu' ('a'..'y' | 'ä' | 'ö' | 'ü' | ('z' ('a'..'t' | 'v'..'y' | 'ä' | 'ö' | 'ü')))* 'en' ',';
+terminal VERB_INFINTIV: ('a'..'y' | 'ä' | 'ö' | 'ü' | ('z' ('a'..'t' | 'v'..'y' | 'ä' | 'ö' | 'ü')))+ ('z')* 'en';								//wenn zwei regeln mit 'en' enden, weiß er nicht welche er nehmen soll 
+terminal DOPPELPUNKT: ':';

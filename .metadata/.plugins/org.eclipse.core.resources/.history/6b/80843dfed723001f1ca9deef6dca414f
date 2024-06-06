@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="Update Site Sf Beleg" url="https://hanskit.github.io/s83765s83768/">
+      Update Site Sf Beleg
+   </description>
+   <feature url="features/de.htwdd.sf.beleg.s83765s83768.feature_1.0.0.2.jar" id="de.htwdd.sf.beleg.s83765s83768.feature" version="1.0.0.2">
+      <category name="Favorites"/>
+   </feature>
+   <category-def name="Favorites" label="Favorites Features"/>
+</site>

@@ -1,0 +1,9 @@
+grammar de.htwdd.sf.beleg.s83765s83768.Dsl with org.eclipse.xtext.common.Terminals
+
+generate dsl "http://www.htwdd.de/sf/beleg/s83765s83768/Dsl"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
