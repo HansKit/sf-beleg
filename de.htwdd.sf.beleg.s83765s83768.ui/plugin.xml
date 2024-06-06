@@ -3,9 +3,6 @@
 <plugin>
 	<extension
 		point="org.eclipse.ui.editors">
-		<application>
-      		<run class="de.htwdd.sf.beleg.s83765s83768.ui.DslExecutableExtensionFactory"/>
-   		</application>
 		<editor
 			class="de.htwdd.sf.beleg.s83765s83768.ui.DslExecutableExtensionFactory:org.eclipse.xtext.ui.editor.XtextEditor"
 			contributorClass="org.eclipse.ui.editors.text.TextEditorActionContributor"

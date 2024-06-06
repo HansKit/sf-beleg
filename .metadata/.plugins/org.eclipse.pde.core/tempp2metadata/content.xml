@@ -1,137 +1,136 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?metadataRepository version='1.2.0'?>
-<repository name='file:/C:/Users/HansK/Desktop/sf%20beleg/.metadata/.plugins/org.eclipse.pde.core/tempp2metadata - metadata' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'>
+<repository name='file:/C:/Users/HansK/workspacenew/.metadata/.plugins/org.eclipse.pde.core/tempp2metadata - metadata' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1717660762740'/>
+    <property name='p2.timestamp' value='1717666646271'/>
     <property name='p2.compressed' value='false'/>
   </properties>
-  <units size='8'>
-    <unit id='de.htwdd.sf.beleg.s83765s83768.ui.tests' version='1.0.0.202406060959' generation='2'>
-      <update id='de.htwdd.sf.beleg.s83765s83768.ui.tests' range='[0.0.0,1.0.0.202406060959)' severity='0'/>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.name' value='de.htwdd.sf.beleg.s83765s83768.ui.tests'/>
-        <property name='org.eclipse.equinox.p2.provider' value='My Company'/>
+  <units size='6'>
+    <unit id='Favorites' version='1.0.0.2--cCiunh7737A3E3E559G'>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='Favorites Features'/>
+        <property name='org.eclipse.equinox.p2.description' value='Favorites'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
       </properties>
-      <provides size='5'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768.ui.tests' version='1.0.0.202406060959'/>
-        <provided namespace='osgi.bundle' name='de.htwdd.sf.beleg.s83765s83768.ui.tests' version='1.0.0.202406060959'/>
-        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.ui.tests' version='0.0.0'/>
-        <provided namespace='osgi.identity' name='de.htwdd.sf.beleg.s83765s83768.ui.tests' version='1.0.0.202406060959'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='Favorites' version='1.0.0.2--cCiunh7737A3E3E559G'/>
       </provides>
-      <requires size='11'>
-        <required namespace='osgi.bundle' name='de.htwdd.sf.beleg.s83765s83768.ui' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.testing' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui.testing' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.testing' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.ui.testing' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='java.package' name='org.junit.jupiter.api' range='[5.1.0,6.0.0)'/>
-        <required namespace='java.package' name='org.junit.jupiter.api.extension' range='[5.1.0,6.0.0)'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=17))'>
-          <description>
-            de.htwdd.sf.beleg.s83765s83768.ui.tests
-          </description>
-        </requiredProperties>
-        <required namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768.ui.tests.source' range='[1.0.0.202406060959,1.0.0.202406060959]' optional='true'>
-          <filter>
-            (org.eclipse.update.install.sources=true)
-          </filter>
-        </required>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.feature.feature.group' range='[1.0.0.202406061137,1.0.0.202406061137]'/>
       </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='de.htwdd.sf.beleg.s83765s83768.ui.tests' version='1.0.0.202406060959'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='2'>
-          <instruction key='zipped'>
-            true
-          </instruction>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: de.htwdd.sf.beleg.s83765s83768.ui.tests; singleton:=true&#xA;Bundle-Version: 1.0.0.202406060959
-          </instruction>
-        </instructions>
-      </touchpointData>
+      <touchpoint id='null' version='0.0.0'/>
     </unit>
-    <unit id='de.htwdd.sf.beleg.s83765s83768.ui' version='1.0.0.202406060959' generation='2'>
-      <update id='de.htwdd.sf.beleg.s83765s83768.ui' range='[0.0.0,1.0.0.202406060959)' severity='0'/>
+    <unit id='de.htwdd.sf.beleg.s83765s83768' version='1.0.0.202406061137' generation='2'>
+      <update id='de.htwdd.sf.beleg.s83765s83768' range='[0.0.0,1.0.0.202406061137)' severity='0'/>
       <properties size='2'>
-        <property name='org.eclipse.equinox.p2.name' value='de.htwdd.sf.beleg.s83765s83768.ui'/>
+        <property name='org.eclipse.equinox.p2.name' value='de.htwdd.sf.beleg.s83765s83768'/>
         <property name='org.eclipse.equinox.p2.provider' value='My Company'/>
       </properties>
-      <provides size='7'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768.ui' version='1.0.0.202406060959'/>
-        <provided namespace='osgi.bundle' name='de.htwdd.sf.beleg.s83765s83768.ui' version='1.0.0.202406060959'/>
-        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.ui.internal' version='0.0.0'/>
-        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.ui.quickfix' version='0.0.0'/>
-        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.ui.contentassist' version='0.0.0'/>
-        <provided namespace='osgi.identity' name='de.htwdd.sf.beleg.s83765s83768.ui' version='1.0.0.202406060959'>
+      <provides size='15'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768' version='1.0.0.202406061137'/>
+        <provided namespace='osgi.bundle' name='de.htwdd.sf.beleg.s83765s83768' version='1.0.0.202406061137'/>
+        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.dsl.util' version='0.0.0'/>
+        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768' version='0.0.0'/>
+        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.services' version='0.0.0'/>
+        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.serializer' version='0.0.0'/>
+        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.scoping' version='0.0.0'/>
+        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.generator' version='0.0.0'/>
+        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.parser.antlr' version='0.0.0'/>
+        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.dsl' version='0.0.0'/>
+        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.dsl.impl' version='0.0.0'/>
+        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.parser.antlr.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.validation' version='0.0.0'/>
+        <provided namespace='osgi.identity' name='de.htwdd.sf.beleg.s83765s83768' version='1.0.0.202406061137'>
           <properties size='1'>
             <property name='type' value='osgi.bundle'/>
           </properties>
         </provided>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
       </provides>
-      <requires size='13'>
-        <required namespace='osgi.bundle' name='de.htwdd.sf.beleg.s83765s83768' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='de.htwdd.sf.beleg.s83765s83768.ide' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui.shared' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui.codetemplates.ui' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='3.14.300'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='3.18.500'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.compare' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.builder' range='0.0.0'/>
+      <requires size='9'>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='3.16.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.lib' range='2.35.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.common' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.antlr.runtime' range='[3.2.0,3.2.1)'/>
         <required namespace='java.package' name='org.apache.log4j' range='0.0.0'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=17))'>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=11))'>
           <description>
-            de.htwdd.sf.beleg.s83765s83768.ui
+            de.htwdd.sf.beleg.s83765s83768
           </description>
         </requiredProperties>
-        <required namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768.ui.source' range='[1.0.0.202406060959,1.0.0.202406060959]' optional='true'>
-          <filter>
-            (org.eclipse.update.install.sources=true)
-          </filter>
-        </required>
       </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='de.htwdd.sf.beleg.s83765s83768.ui' version='1.0.0.202406060959'/>
+        <artifact classifier='osgi.bundle' id='de.htwdd.sf.beleg.s83765s83768' version='1.0.0.202406061137'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
-        <instructions size='2'>
-          <instruction key='zipped'>
-            true
-          </instruction>
+        <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: de.htwdd.sf.beleg.s83765s83768.ui; singleton:=true&#xA;Bundle-Version: 1.0.0.202406060959
+            Bundle-SymbolicName: de.htwdd.sf.beleg.s83765s83768; singleton:=true&#xA;Bundle-Version: 1.0.0.202406061137
           </instruction>
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='de.htwdd.sf.beleg.s83765s83768.feature.feature.jar' version='2.0.0.0'>
+    <unit id='de.htwdd.sf.beleg.s83765s83768.ide' version='1.0.0.202406061137' generation='2'>
+      <update id='de.htwdd.sf.beleg.s83765s83768.ide' range='[0.0.0,1.0.0.202406061137)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='de.htwdd.sf.beleg.s83765s83768.ide'/>
+        <property name='org.eclipse.equinox.p2.provider' value='My Company'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768.ide' version='1.0.0.202406061137'/>
+        <provided namespace='osgi.bundle' name='de.htwdd.sf.beleg.s83765s83768.ide' version='1.0.0.202406061137'/>
+        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.ide.contentassist.antlr.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.ide.contentassist.antlr' version='0.0.0'/>
+        <provided namespace='osgi.identity' name='de.htwdd.sf.beleg.s83765s83768.ide' version='1.0.0.202406061137'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='5'>
+        <required namespace='osgi.bundle' name='de.htwdd.sf.beleg.s83765s83768' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.antlr.runtime' range='[3.2.0,3.2.1)'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=11))'>
+          <description>
+            de.htwdd.sf.beleg.s83765s83768.ide
+          </description>
+        </requiredProperties>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='de.htwdd.sf.beleg.s83765s83768.ide' version='1.0.0.202406061137'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: de.htwdd.sf.beleg.s83765s83768.ide; singleton:=true&#xA;Bundle-Version: 1.0.0.202406061137
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='de.htwdd.sf.feature.feature.jar' version='1.0.0.202406061137'>
       <properties size='3'>
         <property name='org.eclipse.equinox.p2.name' value='Feature'/>
         <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
         <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
       </properties>
       <provides size='3'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768.feature.feature.jar' version='2.0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.feature.feature.jar' version='1.0.0.202406061137'/>
         <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-        <provided namespace='org.eclipse.update.feature' name='de.htwdd.sf.beleg.s83765s83768.feature' version='2.0.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='de.htwdd.sf.feature' version='1.0.0.202406061137'/>
       </provides>
       <filter>
         (org.eclipse.update.install.features=true)
       </filter>
       <artifacts size='1'>
-        <artifact classifier='org.eclipse.update.feature' id='de.htwdd.sf.beleg.s83765s83768.feature' version='2.0.0.0'/>
+        <artifact classifier='org.eclipse.update.feature' id='de.htwdd.sf.feature' version='1.0.0.202406061137'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
@@ -150,8 +149,57 @@
         [Enter Copyright Description here.]
       </copyright>
     </unit>
-    <unit id='de.htwdd.sf.beleg.s83765s83768.feature.feature.group' version='2.0.0.0' singleton='false'>
-      <update id='de.htwdd.sf.beleg.s83765s83768.feature.feature.group' range='[0.0.0,2.0.0.0)' severity='0'/>
+    <unit id='de.htwdd.sf.beleg.s83765s83768.ui' version='1.0.0.202406061137' generation='2'>
+      <update id='de.htwdd.sf.beleg.s83765s83768.ui' range='[0.0.0,1.0.0.202406061137)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='de.htwdd.sf.beleg.s83765s83768.ui'/>
+        <property name='org.eclipse.equinox.p2.provider' value='My Company'/>
+      </properties>
+      <provides size='7'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768.ui' version='1.0.0.202406061137'/>
+        <provided namespace='osgi.bundle' name='de.htwdd.sf.beleg.s83765s83768.ui' version='1.0.0.202406061137'/>
+        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.ui.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.ui.quickfix' version='0.0.0'/>
+        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.ui.contentassist' version='0.0.0'/>
+        <provided namespace='osgi.identity' name='de.htwdd.sf.beleg.s83765s83768.ui' version='1.0.0.202406061137'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='12'>
+        <required namespace='osgi.bundle' name='de.htwdd.sf.beleg.s83765s83768' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='de.htwdd.sf.beleg.s83765s83768.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui.shared' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui.codetemplates.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='3.14.300'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='3.18.500'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.compare' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.builder' range='0.0.0'/>
+        <required namespace='java.package' name='org.apache.log4j' range='0.0.0'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=11))'>
+          <description>
+            de.htwdd.sf.beleg.s83765s83768.ui
+          </description>
+        </requiredProperties>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='de.htwdd.sf.beleg.s83765s83768.ui' version='1.0.0.202406061137'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: de.htwdd.sf.beleg.s83765s83768.ui; singleton:=true&#xA;Bundle-Version: 1.0.0.202406061137
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='de.htwdd.sf.feature.feature.group' version='1.0.0.202406061137' singleton='false'>
+      <update id='de.htwdd.sf.feature.feature.group' range='[0.0.0,1.0.0.202406061137)' severity='0'/>
       <properties size='4'>
         <property name='org.eclipse.equinox.p2.name' value='Feature'/>
         <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
@@ -159,15 +207,13 @@
         <property name='org.eclipse.equinox.p2.type.group' value='true'/>
       </properties>
       <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768.feature.feature.group' version='2.0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.feature.feature.group' version='1.0.0.202406061137'/>
       </provides>
-      <requires size='6'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768.tests' range='[1.0.0.202406060959,1.0.0.202406060959]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768.ide' range='[1.0.0.202406060959,1.0.0.202406060959]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768.ui.tests' range='[1.0.0.202406060959,1.0.0.202406060959]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768' range='[1.0.0.202406060959,1.0.0.202406060959]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768.ui' range='[1.0.0.202406060959,1.0.0.202406060959]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768.feature.feature.jar' range='[2.0.0.0,2.0.0.0]'>
+      <requires size='4'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768.ui' range='[1.0.0.202406061137,1.0.0.202406061137]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768' range='[1.0.0.202406061137,1.0.0.202406061137]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768.ide' range='[1.0.0.202406061137,1.0.0.202406061137]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.feature.feature.jar' range='[1.0.0.202406061137,1.0.0.202406061137]'>
           <filter>
             (org.eclipse.update.install.features=true)
           </filter>
@@ -182,180 +228,6 @@
       <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
         [Enter Copyright Description here.]
       </copyright>
-    </unit>
-    <unit id='de.htwdd.sf.beleg.s83765s83768.tests' version='1.0.0.202406060959' generation='2'>
-      <update id='de.htwdd.sf.beleg.s83765s83768.tests' range='[0.0.0,1.0.0.202406060959)' severity='0'/>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.name' value='de.htwdd.sf.beleg.s83765s83768.tests'/>
-        <property name='org.eclipse.equinox.p2.provider' value='My Company'/>
-      </properties>
-      <provides size='5'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768.tests' version='1.0.0.202406060959'/>
-        <provided namespace='osgi.bundle' name='de.htwdd.sf.beleg.s83765s83768.tests' version='1.0.0.202406060959'/>
-        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.tests' version='0.0.0'/>
-        <provided namespace='osgi.identity' name='de.htwdd.sf.beleg.s83765s83768.tests' version='1.0.0.202406060959'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='8'>
-        <required namespace='osgi.bundle' name='de.htwdd.sf.beleg.s83765s83768' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.testing' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.testing' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.lib' range='2.34.0'/>
-        <required namespace='java.package' name='org.junit.jupiter.api' range='[5.1.0,6.0.0)'/>
-        <required namespace='java.package' name='org.junit.jupiter.api.extension' range='[5.1.0,6.0.0)'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=17))'>
-          <description>
-            de.htwdd.sf.beleg.s83765s83768.tests
-          </description>
-        </requiredProperties>
-        <required namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768.tests.source' range='[1.0.0.202406060959,1.0.0.202406060959]' optional='true'>
-          <filter>
-            (org.eclipse.update.install.sources=true)
-          </filter>
-        </required>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='de.htwdd.sf.beleg.s83765s83768.tests' version='1.0.0.202406060959'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='2'>
-          <instruction key='zipped'>
-            true
-          </instruction>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: de.htwdd.sf.beleg.s83765s83768.tests; singleton:=true&#xA;Bundle-Version: 1.0.0.202406060959
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='Favorites' version='1.0.0.4--cCigSF3'>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.name' value='Favorites Features'/>
-        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='Favorites' version='1.0.0.4--cCigSF3'/>
-      </provides>
-      <requires size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768.feature.feature.group' range='[2.0.0.0,2.0.0.0]'/>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
-    </unit>
-    <unit id='de.htwdd.sf.beleg.s83765s83768' version='1.0.0.202406060959' generation='2'>
-      <update id='de.htwdd.sf.beleg.s83765s83768' range='[0.0.0,1.0.0.202406060959)' severity='0'/>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.name' value='de.htwdd.sf.beleg.s83765s83768'/>
-        <property name='org.eclipse.equinox.p2.provider' value='My Company'/>
-      </properties>
-      <provides size='15'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768' version='1.0.0.202406060959'/>
-        <provided namespace='osgi.bundle' name='de.htwdd.sf.beleg.s83765s83768' version='1.0.0.202406060959'/>
-        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.dsl.util' version='0.0.0'/>
-        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768' version='0.0.0'/>
-        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.services' version='0.0.0'/>
-        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.serializer' version='0.0.0'/>
-        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.scoping' version='0.0.0'/>
-        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.generator' version='0.0.0'/>
-        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.parser.antlr' version='0.0.0'/>
-        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.dsl' version='0.0.0'/>
-        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.dsl.impl' version='0.0.0'/>
-        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.parser.antlr.internal' version='0.0.0'/>
-        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.validation' version='0.0.0'/>
-        <provided namespace='osgi.identity' name='de.htwdd.sf.beleg.s83765s83768' version='1.0.0.202406060959'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='10'>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='3.16.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.lib' range='2.34.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.common' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.antlr.runtime' range='[3.2.0,3.2.1)'/>
-        <required namespace='java.package' name='org.apache.log4j' range='0.0.0'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=17))'>
-          <description>
-            de.htwdd.sf.beleg.s83765s83768
-          </description>
-        </requiredProperties>
-        <required namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768.source' range='[1.0.0.202406060959,1.0.0.202406060959]' optional='true'>
-          <filter>
-            (org.eclipse.update.install.sources=true)
-          </filter>
-        </required>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='de.htwdd.sf.beleg.s83765s83768' version='1.0.0.202406060959'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='2'>
-          <instruction key='zipped'>
-            true
-          </instruction>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: de.htwdd.sf.beleg.s83765s83768; singleton:=true&#xA;Bundle-Version: 1.0.0.202406060959
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='de.htwdd.sf.beleg.s83765s83768.ide' version='1.0.0.202406060959' generation='2'>
-      <update id='de.htwdd.sf.beleg.s83765s83768.ide' range='[0.0.0,1.0.0.202406060959)' severity='0'/>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.name' value='de.htwdd.sf.beleg.s83765s83768.ide'/>
-        <property name='org.eclipse.equinox.p2.provider' value='My Company'/>
-      </properties>
-      <provides size='6'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768.ide' version='1.0.0.202406060959'/>
-        <provided namespace='osgi.bundle' name='de.htwdd.sf.beleg.s83765s83768.ide' version='1.0.0.202406060959'/>
-        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.ide.contentassist.antlr.internal' version='0.0.0'/>
-        <provided namespace='java.package' name='de.htwdd.sf.beleg.s83765s83768.ide.contentassist.antlr' version='0.0.0'/>
-        <provided namespace='osgi.identity' name='de.htwdd.sf.beleg.s83765s83768.ide' version='1.0.0.202406060959'>
-          <properties size='1'>
-            <property name='type' value='osgi.bundle'/>
-          </properties>
-        </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='6'>
-        <required namespace='osgi.bundle' name='de.htwdd.sf.beleg.s83765s83768' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.ide' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.ide' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.antlr.runtime' range='[3.2.0,3.2.1)'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=17))'>
-          <description>
-            de.htwdd.sf.beleg.s83765s83768.ide
-          </description>
-        </requiredProperties>
-        <required namespace='org.eclipse.equinox.p2.iu' name='de.htwdd.sf.beleg.s83765s83768.ide.source' range='[1.0.0.202406060959,1.0.0.202406060959]' optional='true'>
-          <filter>
-            (org.eclipse.update.install.sources=true)
-          </filter>
-        </required>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='de.htwdd.sf.beleg.s83765s83768.ide' version='1.0.0.202406060959'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='2'>
-          <instruction key='zipped'>
-            true
-          </instruction>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: de.htwdd.sf.beleg.s83765s83768.ide; singleton:=true&#xA;Bundle-Version: 1.0.0.202406060959
-          </instruction>
-        </instructions>
-      </touchpointData>
     </unit>
   </units>
 </repository>

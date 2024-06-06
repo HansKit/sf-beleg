@@ -10,10 +10,10 @@ Require-Bundle: org.eclipse.xtext,
  org.eclipse.xtext.xbase,
  org.eclipse.equinox.common;bundle-version="3.16.0",
  org.eclipse.emf.ecore,
- org.eclipse.xtext.xbase.lib;bundle-version="2.34.0",
+ org.eclipse.xtext.xbase.lib;bundle-version="2.35.0",
  org.eclipse.emf.common,
  org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
-Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Export-Package: de.htwdd.sf.beleg.s83765s83768.dsl.util,
  de.htwdd.sf.beleg.s83765s83768,
  de.htwdd.sf.beleg.s83765s83768.services,

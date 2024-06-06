@@ -12,6 +12,6 @@
     <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dorg.eclipse.swt.graphics.Resource.reportNonDisposed=true"/>
     <booleanAttribute key="pde.generated.config" value="true"/>
     <stringAttribute key="pde.version" value="3.3"/>
-    <stringAttribute key="product" value="org.eclipse.epp.package.jee.product"/>
+    <stringAttribute key="product" value="org.eclipse.sdk.ide"/>
     <booleanAttribute key="useProduct" value="true"/>
 </launchConfiguration>

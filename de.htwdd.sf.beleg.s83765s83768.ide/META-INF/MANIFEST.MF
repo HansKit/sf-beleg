@@ -10,6 +10,6 @@ Require-Bundle: de.htwdd.sf.beleg.s83765s83768,
  org.eclipse.xtext.ide,
  org.eclipse.xtext.xbase.ide,
  org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
-Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Export-Package: de.htwdd.sf.beleg.s83765s83768.ide.contentassist.antlr.internal,
  de.htwdd.sf.beleg.s83765s83768.ide.contentassist.antlr
