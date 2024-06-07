@@ -6,14 +6,34 @@ Model:
     stories+=Story*;
 
 Story:
-    title=Title dp=DOPPELPUNKT 'Um' benefit=Benefit 'möchte' 'ich' 'als' role=Role action=Action '.'; 
+    title=Title dp=DOPPELPUNKT 'Um' benefit=Benefit 'möchte' 'ich' 'als' role=Role action=Action '.';
 
-Title:noun=NOUN verb=VERB_INFINTIV;
-Benefit:noun=NOUN pzvi=PREFIX_ZU_VERB_INFINTIV;
-Role: noun=NOUN;
-Action: noun=NOUN vi=VERB_INFINTIV;
+Title:
+    noun=NOMEN verb=VERB_INFINITIV;
 
-terminal NOUN: ('A'..'Z' | 'Ä' | 'Ö' | 'Ü')('a'..'z' | 'ä' | 'ö' | 'ü')*;
-terminal PREFIX_ZU_VERB_INFINTIV: ('a'..'z' | 'ä' | 'ö' | 'ü')* 'zu' ('a'..'y' | 'ä' | 'ö' | 'ü' | ('z' ('a'..'t' | 'v'..'y' | 'ä' | 'ö' | 'ü')))* 'en' ',';
-terminal VERB_INFINTIV: ('a'..'y' | 'ä' | 'ö' | 'ü' | ('z' ('a'..'t' | 'v'..'y' | 'ä' | 'ö' | 'ü')))+ ('z')* 'en';								//wenn zwei regeln mit 'en' enden, weiß er nicht welche er nehmen soll 
-terminal DOPPELPUNKT: ':';
+Benefit:
+    noun=NOMEN pzvi=PREFIX_ZU_VERB_INFINITIV;
+
+Role:
+    noun=NOMEN;
+
+Action:
+    noun=NOMEN vi=VERB_INFINITIV;
+
+terminal NOMEN: ('A'..'Z' | 'Ä' | 'Ö' | 'Ü') ('a'..'z' | 'ä' | 'ö' | 'ü')*;
+
+terminal VERB_ENDUNG: 'en' | 'eln' | 'ern' | 'tun' | 'sein';
+
+terminal PREFIX_ZU_VERB_INFINITIV: VERB_PREFIX 'zu' WORT_TEIL_OHNE_ZU+ VERB_ENDUNG',';
+
+terminal VERB_PREFIX: VALIDER_ZU_PREFIX | WORT_TEIL_OHNE_ZU+;
+
+terminal VALIDER_ZU_PREFIX: 'zusammen' | 'zurück';
+
+terminal Z_UND_NICHT_U: 'z'('a'..'t' | 'v'..'y' | 'ä' | 'ö' | 'ü');
+
+terminal WORT_TEIL_OHNE_ZU: ('a'..'y' | 'ä' | 'ö' | 'ü') | Z_UND_NICHT_U;
+
+terminal VERB_INFINITIV: VERB_PREFIX VERB_ENDUNG;
+
+terminal DOPPELPUNK: ':';
