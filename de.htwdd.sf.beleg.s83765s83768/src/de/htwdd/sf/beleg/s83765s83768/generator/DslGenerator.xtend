@@ -19,7 +19,7 @@ class DslGenerator extends AbstractGenerator {
                 «FOR story : model.stories»
                 <story>
                     <title>«story.title.noun» «story.title.verb»</title>
-                    <benefit>«story.benefit.noun» «story.benefit.pzvi.startsWith("zu") ? story.benefit.pzvi.replaceFirst("zu", "üü").replace("zu", "").replaceFirst("üü", "zu") : story.benefit.pzvi.replace("zu", "")»</benefit>
+                    <benefit>«story.benefit.noun» «story.benefit.pzvi.startsWith("zu") ? story.benefit.pzvi.replaceFirst("zu", "$").replace("zu", "").replaceFirst("$", "zu").replace(",", "") : story.benefit.pzvi.replace("zu", "").replace(",", "")»</benefit>
                     <role>«story.role.noun»</role>
                     <action>«story.action.noun» «story.action.vi»</action>
                 </story>
