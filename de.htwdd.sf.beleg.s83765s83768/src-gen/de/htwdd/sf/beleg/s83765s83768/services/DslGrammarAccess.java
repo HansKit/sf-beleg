@@ -337,7 +337,7 @@ public class DslGrammarAccess extends AbstractElementFinder.AbstractGrammarEleme
 		return tNOMEN;
 	}
 	
-	//terminal VERB_ENDUNG: 'en' | 'eln' | 'ern' | 'tun' | 'sein';
+	//terminal VERB_ENDUNG: 'en' | 'eln' | 'ern' | 'un' | 'in';
 	public TerminalRule getVERB_ENDUNGRule() {
 		return tVERB_ENDUNG;
 	}
@@ -362,7 +362,7 @@ public class DslGrammarAccess extends AbstractElementFinder.AbstractGrammarEleme
 		return tWORT_TEIL_OHNE_ZU;
 	}
 	
-	//terminal VERB_INFINITIV: VALIDER_ZU_PREFIX? WORT_TEIL_OHNE_ZU+ VERB_ENDUNG;
+	//terminal VERB_INFINITIV: ('a'..'z' | 'ä' | 'ö' | 'ü')+ VERB_ENDUNG;
 	public TerminalRule getVERB_INFINITIVRule() {
 		return tVERB_INFINITIV;
 	}

@@ -431,7 +431,7 @@ ruleAction returns [EObject current=null]
 
 RULE_NOMEN : ('A'..'Z'|'\u00C4'|'\u00D6'|'\u00DC') ('a'..'z'|'\u00E4'|'\u00F6'|'\u00FC')*;
 
-fragment RULE_VERB_ENDUNG : ('en'|'eln'|'ern'|'tun'|'sein');
+fragment RULE_VERB_ENDUNG : ('en'|'eln'|'ern'|'un'|'in');
 
 RULE_PREFIX_ZU_VERB_INFINITIV : (RULE_VALIDER_ZU_PREFIX|RULE_WORT_TEIL_OHNE_ZU+) 'zu' RULE_WORT_TEIL_OHNE_ZU+ RULE_VERB_ENDUNG ',';
 
@@ -441,7 +441,7 @@ fragment RULE_Z_UND_NICHT_U : 'z' ('a'..'t'|'v'..'y'|'\u00E4'|'\u00F6'|'\u00FC')
 
 fragment RULE_WORT_TEIL_OHNE_ZU : (('a'..'y'|'\u00E4'|'\u00F6'|'\u00FC')|RULE_Z_UND_NICHT_U);
 
-RULE_VERB_INFINITIV : RULE_VALIDER_ZU_PREFIX? RULE_WORT_TEIL_OHNE_ZU+ RULE_VERB_ENDUNG;
+RULE_VERB_INFINITIV : ('a'..'z'|'\u00E4'|'\u00F6'|'\u00FC')+ RULE_VERB_ENDUNG;
 
 RULE_DOPPELPUNKT : ':';
 

@@ -22,7 +22,7 @@ Action:
 
 terminal NOMEN: ('A'..'Z' | 'Ä' | 'Ö' | 'Ü') ('a'..'z' | 'ä' | 'ö' | 'ü')*;
 
-terminal VERB_ENDUNG: 'en' | 'eln' | 'ern' | 'tun' | 'sein';
+terminal VERB_ENDUNG: 'en' | 'eln' | 'ern' | 'un' | 'in';
 
 terminal PREFIX_ZU_VERB_INFINITIV: (VALIDER_ZU_PREFIX | WORT_TEIL_OHNE_ZU+) 'zu' WORT_TEIL_OHNE_ZU+ VERB_ENDUNG ',';
 
@@ -32,6 +32,6 @@ terminal Z_UND_NICHT_U: 'z'('a'..'t' | 'v'..'y' | 'ä' | 'ö' | 'ü');
 
 terminal WORT_TEIL_OHNE_ZU: ('a'..'y' | 'ä' | 'ö' | 'ü') | Z_UND_NICHT_U;
 
-terminal VERB_INFINITIV: VALIDER_ZU_PREFIX? WORT_TEIL_OHNE_ZU+ VERB_ENDUNG;
+terminal VERB_INFINITIV: ('a'..'z' | 'ä' | 'ö' | 'ü')+ VERB_ENDUNG;
 
 terminal DOPPELPUNKT: ':';
