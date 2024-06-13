@@ -15,61 +15,72 @@ import org.eclipse.xtext.generator.IGeneratorContext;
 
 @SuppressWarnings("all")
 public class DslGenerator extends AbstractGenerator {
-  private String indentBy(int count, String string) {
-    String indentString = "    ";
-    return indentString.repeat(count) + string;
-  }
-
   @Override
   public void doGenerate(final Resource resource, final IFileSystemAccess2 fsa, final IGeneratorContext context) {
-    final Model model = (Model) resource.getContents().get(0);
-    StringConcatenation builder = new StringConcatenation();
-    builder.append("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
-    builder.newLine();
-    builder.append("<stories>");
-    builder.newLine();
+    EObject _get = resource.getContents().get(0);
+    final Model model = ((Model) _get);
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
+    _builder.newLine();
+    _builder.append("<stories>");
+    _builder.newLine();
     {
-      for(final Story story : model.getStories()) {
-        String titleNoun = story.getTitle().getNoun();
-        String titleVerb = story.getTitle().getVerb();
-        String titleContent = titleNoun + " " + titleVerb;
-        String benefitNoun = story.getBenefit().getNoun();
-        String benefitVerb = story.getBenefit().getPzvi();
-        String benefitVerbInfinitive = benefitVerb.startsWith("zu")
-                ? benefitVerb.replaceFirst("zu", "$")
-                .replace("zu", "")
-                .replaceFirst("$", "zu")
-                : benefitVerb.replace("zu", "");
-        String benefitContent = benefitNoun + " " + benefitVerbInfinitive.replace(",", "");
-        String roleContent = story.getRole().getNoun();
-        String actionNoun = story.getAction().getNoun();
-        String actionVerb = story.getAction().getVi();
-        String actionContent = actionNoun + " " + actionVerb;
-        builder.append(indentBy(1, "<story>"));
-        builder.newLine();
-        builder.append(indentBy(2, "<title>"));
-        builder.append(titleContent);
-        builder.append("</title>");
-        builder.newLineIfNotEmpty();
-        builder.append(indentBy(2, "<benefit>"));
-        builder.append(benefitContent);
-        builder.append("</benefit>");
-        builder.newLineIfNotEmpty();
-        builder.append(indentBy(2, "<role>"));
-        builder.append(roleContent);
-        builder.append("</role>");
-        builder.newLineIfNotEmpty();
-        builder.append(indentBy(2, "<action>"));
-        builder.append(actionContent);
-        builder.append("</action>");
-        builder.newLineIfNotEmpty();
-        builder.append(indentBy(1, "</story>"));
-        builder.newLine();
+      EList<Story> _stories = model.getStories();
+      for(final Story story : _stories) {
+        _builder.append("    ");
+        _builder.append("<story>");
+        _builder.newLine();
+        _builder.append("    ");
+        _builder.append("    ");
+        _builder.append("<title>");
+        String _noun = story.getTitle().getNoun();
+        _builder.append(_noun, "        ");
+        _builder.append(" ");
+        String _verb = story.getTitle().getVerb();
+        _builder.append(_verb, "        ");
+        _builder.append("</title>");
+        _builder.newLineIfNotEmpty();
+        _builder.append("    ");
+        _builder.append("    ");
+        _builder.append("<benefit>");
+        String _noun_1 = story.getBenefit().getNoun();
+        _builder.append(_noun_1, "        ");
+        _builder.append(" ");
+        String _xifexpression = null;
+        boolean _startsWith = story.getBenefit().getPzvi().startsWith("zu");
+        if (_startsWith) {
+          _xifexpression = story.getBenefit().getPzvi().replaceFirst("zu", "$").replace("zu", "").replaceFirst("$", "zu").replace(",", "");
+        } else {
+          _xifexpression = story.getBenefit().getPzvi().replace("zu", "").replace(",", "");
+        }
+        _builder.append(_xifexpression, "        ");
+        _builder.append("</benefit>");
+        _builder.newLineIfNotEmpty();
+        _builder.append("    ");
+        _builder.append("    ");
+        _builder.append("<role>");
+        String _noun_2 = story.getRole().getNoun();
+        _builder.append(_noun_2, "        ");
+        _builder.append("</role>");
+        _builder.newLineIfNotEmpty();
+        _builder.append("    ");
+        _builder.append("    ");
+        _builder.append("<action>");
+        String _noun_3 = story.getAction().getNoun();
+        _builder.append(_noun_3, "        ");
+        _builder.append(" ");
+        String _vi = story.getAction().getVi();
+        _builder.append(_vi, "        ");
+        _builder.append("</action>");
+        _builder.newLineIfNotEmpty();
+        _builder.append("    ");
+        _builder.append("</story>");
+        _builder.newLine();
       }
     }
-    builder.append("</stories>");
-    builder.newLine();
-    final String xmlContent = builder.toString();
+    _builder.append("</stories>");
+    _builder.newLine();
+    final String xmlContent = _builder.toString();
     fsa.generateFile("s83765s83768.xml", xmlContent);
   }
 }

@@ -111,93 +111,97 @@ public class DslGrammarAccess extends AbstractElementFinder.AbstractGrammarEleme
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "de.htwdd.sf.beleg.s83765s83768.Dsl.Title");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cNounAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final RuleCall cNounNOUNTerminalRuleCall_0_0 = (RuleCall)cNounAssignment_0.eContents().get(0);
+		private final RuleCall cNounNOMENTerminalRuleCall_0_0 = (RuleCall)cNounAssignment_0.eContents().get(0);
 		private final Assignment cVerbAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cVerbVERB_INFINTIVTerminalRuleCall_1_0 = (RuleCall)cVerbAssignment_1.eContents().get(0);
+		private final RuleCall cVerbVERB_INFINITIVTerminalRuleCall_1_0 = (RuleCall)cVerbAssignment_1.eContents().get(0);
 		
-		//Title:noun=NOUN verb=VERB_INFINTIV;
+		//Title:
+		//    noun=NOMEN verb=VERB_INFINITIV;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//noun=NOUN verb=VERB_INFINTIV
+		//noun=NOMEN verb=VERB_INFINITIV
 		public Group getGroup() { return cGroup; }
 		
-		//noun=NOUN
+		//noun=NOMEN
 		public Assignment getNounAssignment_0() { return cNounAssignment_0; }
 		
-		//NOUN
-		public RuleCall getNounNOUNTerminalRuleCall_0_0() { return cNounNOUNTerminalRuleCall_0_0; }
+		//NOMEN
+		public RuleCall getNounNOMENTerminalRuleCall_0_0() { return cNounNOMENTerminalRuleCall_0_0; }
 		
-		//verb=VERB_INFINTIV
+		//verb=VERB_INFINITIV
 		public Assignment getVerbAssignment_1() { return cVerbAssignment_1; }
 		
-		//VERB_INFINTIV
-		public RuleCall getVerbVERB_INFINTIVTerminalRuleCall_1_0() { return cVerbVERB_INFINTIVTerminalRuleCall_1_0; }
+		//VERB_INFINITIV
+		public RuleCall getVerbVERB_INFINITIVTerminalRuleCall_1_0() { return cVerbVERB_INFINITIVTerminalRuleCall_1_0; }
 	}
 	public class BenefitElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "de.htwdd.sf.beleg.s83765s83768.Dsl.Benefit");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cNounAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final RuleCall cNounNOUNTerminalRuleCall_0_0 = (RuleCall)cNounAssignment_0.eContents().get(0);
+		private final RuleCall cNounNOMENTerminalRuleCall_0_0 = (RuleCall)cNounAssignment_0.eContents().get(0);
 		private final Assignment cPzviAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cPzviPREFIX_ZU_VERB_INFINTIVTerminalRuleCall_1_0 = (RuleCall)cPzviAssignment_1.eContents().get(0);
+		private final RuleCall cPzviPREFIX_ZU_VERB_INFINITIVTerminalRuleCall_1_0 = (RuleCall)cPzviAssignment_1.eContents().get(0);
 		
-		//Benefit:noun=NOUN pzvi=PREFIX_ZU_VERB_INFINTIV;
+		//Benefit:
+		//    noun=NOMEN pzvi=PREFIX_ZU_VERB_INFINITIV;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//noun=NOUN pzvi=PREFIX_ZU_VERB_INFINTIV
+		//noun=NOMEN pzvi=PREFIX_ZU_VERB_INFINITIV
 		public Group getGroup() { return cGroup; }
 		
-		//noun=NOUN
+		//noun=NOMEN
 		public Assignment getNounAssignment_0() { return cNounAssignment_0; }
 		
-		//NOUN
-		public RuleCall getNounNOUNTerminalRuleCall_0_0() { return cNounNOUNTerminalRuleCall_0_0; }
+		//NOMEN
+		public RuleCall getNounNOMENTerminalRuleCall_0_0() { return cNounNOMENTerminalRuleCall_0_0; }
 		
-		//pzvi=PREFIX_ZU_VERB_INFINTIV
+		//pzvi=PREFIX_ZU_VERB_INFINITIV
 		public Assignment getPzviAssignment_1() { return cPzviAssignment_1; }
 		
-		//PREFIX_ZU_VERB_INFINTIV
-		public RuleCall getPzviPREFIX_ZU_VERB_INFINTIVTerminalRuleCall_1_0() { return cPzviPREFIX_ZU_VERB_INFINTIVTerminalRuleCall_1_0; }
+		//PREFIX_ZU_VERB_INFINITIV
+		public RuleCall getPzviPREFIX_ZU_VERB_INFINITIVTerminalRuleCall_1_0() { return cPzviPREFIX_ZU_VERB_INFINITIVTerminalRuleCall_1_0; }
 	}
 	public class RoleElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "de.htwdd.sf.beleg.s83765s83768.Dsl.Role");
 		private final Assignment cNounAssignment = (Assignment)rule.eContents().get(1);
-		private final RuleCall cNounNOUNTerminalRuleCall_0 = (RuleCall)cNounAssignment.eContents().get(0);
+		private final RuleCall cNounNOMENTerminalRuleCall_0 = (RuleCall)cNounAssignment.eContents().get(0);
 		
-		//Role: noun=NOUN;
+		//Role:
+		//    noun=NOMEN;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//noun=NOUN
+		//noun=NOMEN
 		public Assignment getNounAssignment() { return cNounAssignment; }
 		
-		//NOUN
-		public RuleCall getNounNOUNTerminalRuleCall_0() { return cNounNOUNTerminalRuleCall_0; }
+		//NOMEN
+		public RuleCall getNounNOMENTerminalRuleCall_0() { return cNounNOMENTerminalRuleCall_0; }
 	}
 	public class ActionElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "de.htwdd.sf.beleg.s83765s83768.Dsl.Action");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cNounAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final RuleCall cNounNOUNTerminalRuleCall_0_0 = (RuleCall)cNounAssignment_0.eContents().get(0);
+		private final RuleCall cNounNOMENTerminalRuleCall_0_0 = (RuleCall)cNounAssignment_0.eContents().get(0);
 		private final Assignment cViAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cViVERB_INFINTIVTerminalRuleCall_1_0 = (RuleCall)cViAssignment_1.eContents().get(0);
+		private final RuleCall cViVERB_INFINITIVTerminalRuleCall_1_0 = (RuleCall)cViAssignment_1.eContents().get(0);
 		
-		//Action: noun=NOUN vi=VERB_INFINTIV;
+		//Action:
+		//    noun=NOMEN vi=VERB_INFINITIV;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//noun=NOUN vi=VERB_INFINTIV
+		//noun=NOMEN vi=VERB_INFINITIV
 		public Group getGroup() { return cGroup; }
 		
-		//noun=NOUN
+		//noun=NOMEN
 		public Assignment getNounAssignment_0() { return cNounAssignment_0; }
 		
-		//NOUN
-		public RuleCall getNounNOUNTerminalRuleCall_0_0() { return cNounNOUNTerminalRuleCall_0_0; }
+		//NOMEN
+		public RuleCall getNounNOMENTerminalRuleCall_0_0() { return cNounNOMENTerminalRuleCall_0_0; }
 		
-		//vi=VERB_INFINTIV
+		//vi=VERB_INFINITIV
 		public Assignment getViAssignment_1() { return cViAssignment_1; }
 		
-		//VERB_INFINTIV
-		public RuleCall getViVERB_INFINTIVTerminalRuleCall_1_0() { return cViVERB_INFINTIVTerminalRuleCall_1_0; }
+		//VERB_INFINITIV
+		public RuleCall getViVERB_INFINITIVTerminalRuleCall_1_0() { return cViVERB_INFINITIVTerminalRuleCall_1_0; }
 	}
 	
 	
@@ -207,9 +211,13 @@ public class DslGrammarAccess extends AbstractElementFinder.AbstractGrammarEleme
 	private final BenefitElements pBenefit;
 	private final RoleElements pRole;
 	private final ActionElements pAction;
-	private final TerminalRule tNOUN;
-	private final TerminalRule tPREFIX_ZU_VERB_INFINTIV;
-	private final TerminalRule tVERB_INFINTIV;
+	private final TerminalRule tNOMEN;
+	private final TerminalRule tVERB_ENDUNG;
+	private final TerminalRule tPREFIX_ZU_VERB_INFINITIV;
+	private final TerminalRule tVALIDER_ZU_PREFIX;
+	private final TerminalRule tZ_UND_NICHT_U;
+	private final TerminalRule tWORT_TEIL_OHNE_ZU;
+	private final TerminalRule tVERB_INFINITIV;
 	private final TerminalRule tDOPPELPUNKT;
 	
 	private final Grammar grammar;
@@ -227,9 +235,13 @@ public class DslGrammarAccess extends AbstractElementFinder.AbstractGrammarEleme
 		this.pBenefit = new BenefitElements();
 		this.pRole = new RoleElements();
 		this.pAction = new ActionElements();
-		this.tNOUN = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "de.htwdd.sf.beleg.s83765s83768.Dsl.NOUN");
-		this.tPREFIX_ZU_VERB_INFINTIV = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "de.htwdd.sf.beleg.s83765s83768.Dsl.PREFIX_ZU_VERB_INFINTIV");
-		this.tVERB_INFINTIV = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "de.htwdd.sf.beleg.s83765s83768.Dsl.VERB_INFINTIV");
+		this.tNOMEN = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "de.htwdd.sf.beleg.s83765s83768.Dsl.NOMEN");
+		this.tVERB_ENDUNG = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "de.htwdd.sf.beleg.s83765s83768.Dsl.VERB_ENDUNG");
+		this.tPREFIX_ZU_VERB_INFINITIV = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "de.htwdd.sf.beleg.s83765s83768.Dsl.PREFIX_ZU_VERB_INFINITIV");
+		this.tVALIDER_ZU_PREFIX = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "de.htwdd.sf.beleg.s83765s83768.Dsl.VALIDER_ZU_PREFIX");
+		this.tZ_UND_NICHT_U = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "de.htwdd.sf.beleg.s83765s83768.Dsl.Z_UND_NICHT_U");
+		this.tWORT_TEIL_OHNE_ZU = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "de.htwdd.sf.beleg.s83765s83768.Dsl.WORT_TEIL_OHNE_ZU");
+		this.tVERB_INFINITIV = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "de.htwdd.sf.beleg.s83765s83768.Dsl.VERB_INFINITIV");
 		this.tDOPPELPUNKT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "de.htwdd.sf.beleg.s83765s83768.Dsl.DOPPELPUNKT");
 	}
 	
@@ -280,7 +292,8 @@ public class DslGrammarAccess extends AbstractElementFinder.AbstractGrammarEleme
 		return getStoryAccess().getRule();
 	}
 	
-	//Title:noun=NOUN verb=VERB_INFINTIV;
+	//Title:
+	//    noun=NOMEN verb=VERB_INFINITIV;
 	public TitleElements getTitleAccess() {
 		return pTitle;
 	}
@@ -289,7 +302,8 @@ public class DslGrammarAccess extends AbstractElementFinder.AbstractGrammarEleme
 		return getTitleAccess().getRule();
 	}
 	
-	//Benefit:noun=NOUN pzvi=PREFIX_ZU_VERB_INFINTIV;
+	//Benefit:
+	//    noun=NOMEN pzvi=PREFIX_ZU_VERB_INFINITIV;
 	public BenefitElements getBenefitAccess() {
 		return pBenefit;
 	}
@@ -298,7 +312,8 @@ public class DslGrammarAccess extends AbstractElementFinder.AbstractGrammarEleme
 		return getBenefitAccess().getRule();
 	}
 	
-	//Role: noun=NOUN;
+	//Role:
+	//    noun=NOMEN;
 	public RoleElements getRoleAccess() {
 		return pRole;
 	}
@@ -307,7 +322,8 @@ public class DslGrammarAccess extends AbstractElementFinder.AbstractGrammarEleme
 		return getRoleAccess().getRule();
 	}
 	
-	//Action: noun=NOUN vi=VERB_INFINTIV;
+	//Action:
+	//    noun=NOMEN vi=VERB_INFINITIV;
 	public ActionElements getActionAccess() {
 		return pAction;
 	}
@@ -316,22 +332,41 @@ public class DslGrammarAccess extends AbstractElementFinder.AbstractGrammarEleme
 		return getActionAccess().getRule();
 	}
 	
-	//terminal NOUN: ('A'..'Z' | 'Ä' | 'Ö' | 'Ü')('a'..'z' | 'ä' | 'ö' | 'ü')*;
-	public TerminalRule getNOUNRule() {
-		return tNOUN;
+	//terminal NOMEN: ('A'..'Z' | 'Ä' | 'Ö' | 'Ü') ('a'..'z' | 'ä' | 'ö' | 'ü')*;
+	public TerminalRule getNOMENRule() {
+		return tNOMEN;
 	}
 	
-	//terminal PREFIX_ZU_VERB_INFINTIV: ('a'..'z' | 'ä' | 'ö' | 'ü')* 'zu' ('a'..'y' | 'ä' | 'ö' | 'ü' | ('z' ('a'..'t' | 'v'..'y' | 'ä' | 'ö' | 'ü')))* 'en' ',';
-	public TerminalRule getPREFIX_ZU_VERB_INFINTIVRule() {
-		return tPREFIX_ZU_VERB_INFINTIV;
+	//terminal VERB_ENDUNG: 'en' | 'eln' | 'ern' | 'tun' | 'sein';
+	public TerminalRule getVERB_ENDUNGRule() {
+		return tVERB_ENDUNG;
 	}
 	
-	//terminal VERB_INFINTIV: ('a'..'y' | 'ä' | 'ö' | 'ü' | ('z' ('a'..'t' | 'v'..'y' | 'ä' | 'ö' | 'ü')))+ ('z')* 'en';
-	public TerminalRule getVERB_INFINTIVRule() {
-		return tVERB_INFINTIV;
+	//terminal PREFIX_ZU_VERB_INFINITIV: (VALIDER_ZU_PREFIX | WORT_TEIL_OHNE_ZU+) 'zu' WORT_TEIL_OHNE_ZU+ VERB_ENDUNG ',';
+	public TerminalRule getPREFIX_ZU_VERB_INFINITIVRule() {
+		return tPREFIX_ZU_VERB_INFINITIV;
 	}
 	
-	//                                //wenn zwei regeln mit 'en' enden, weiß er nicht welche er nehmen soll
+	//terminal VALIDER_ZU_PREFIX: 'zusammen' | 'zurück';
+	public TerminalRule getVALIDER_ZU_PREFIXRule() {
+		return tVALIDER_ZU_PREFIX;
+	}
+	
+	//terminal Z_UND_NICHT_U: 'z'('a'..'t' | 'v'..'y' | 'ä' | 'ö' | 'ü');
+	public TerminalRule getZ_UND_NICHT_URule() {
+		return tZ_UND_NICHT_U;
+	}
+	
+	//terminal WORT_TEIL_OHNE_ZU: ('a'..'y' | 'ä' | 'ö' | 'ü') | Z_UND_NICHT_U;
+	public TerminalRule getWORT_TEIL_OHNE_ZURule() {
+		return tWORT_TEIL_OHNE_ZU;
+	}
+	
+	//terminal VERB_INFINITIV: VALIDER_ZU_PREFIX? WORT_TEIL_OHNE_ZU+ VERB_ENDUNG;
+	public TerminalRule getVERB_INFINITIVRule() {
+		return tVERB_INFINITIV;
+	}
+	
 	//terminal DOPPELPUNKT: ':';
 	public TerminalRule getDOPPELPUNKTRule() {
 		return tDOPPELPUNKT;

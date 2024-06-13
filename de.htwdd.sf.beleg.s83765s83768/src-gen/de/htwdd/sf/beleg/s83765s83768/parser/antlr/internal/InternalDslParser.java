@@ -21,25 +21,29 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalDslParser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_DOPPELPUNKT", "RULE_NOUN", "RULE_VERB_INFINTIV", "RULE_PREFIX_ZU_VERB_INFINTIV", "RULE_ID", "RULE_INT", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'Um'", "'m\\u00F6chte'", "'ich'", "'als'", "'.'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_DOPPELPUNKT", "RULE_NOMEN", "RULE_VERB_INFINITIV", "RULE_PREFIX_ZU_VERB_INFINITIV", "RULE_VERB_ENDUNG", "RULE_VALIDER_ZU_PREFIX", "RULE_WORT_TEIL_OHNE_ZU", "RULE_Z_UND_NICHT_U", "RULE_ID", "RULE_INT", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'Um'", "'m\\u00F6chte'", "'ich'", "'als'", "'.'"
     };
     public static final int RULE_DOPPELPUNKT=4;
-    public static final int RULE_STRING=10;
-    public static final int RULE_SL_COMMENT=12;
+    public static final int RULE_VERB_ENDUNG=8;
+    public static final int RULE_STRING=14;
+    public static final int RULE_VALIDER_ZU_PREFIX=9;
+    public static final int RULE_SL_COMMENT=16;
     public static final int T__19=19;
-    public static final int T__15=15;
-    public static final int T__16=16;
-    public static final int T__17=17;
-    public static final int T__18=18;
-    public static final int RULE_NOUN=5;
+    public static final int RULE_WORT_TEIL_OHNE_ZU=10;
+    public static final int RULE_Z_UND_NICHT_U=11;
     public static final int EOF=-1;
-    public static final int RULE_ID=8;
-    public static final int RULE_WS=13;
-    public static final int RULE_ANY_OTHER=14;
-    public static final int RULE_VERB_INFINTIV=6;
-    public static final int RULE_PREFIX_ZU_VERB_INFINTIV=7;
-    public static final int RULE_INT=9;
-    public static final int RULE_ML_COMMENT=11;
+    public static final int RULE_NOMEN=5;
+    public static final int RULE_ID=12;
+    public static final int RULE_WS=17;
+    public static final int RULE_PREFIX_ZU_VERB_INFINITIV=7;
+    public static final int RULE_ANY_OTHER=18;
+    public static final int RULE_VERB_INFINITIV=6;
+    public static final int RULE_INT=13;
+    public static final int T__22=22;
+    public static final int RULE_ML_COMMENT=15;
+    public static final int T__23=23;
+    public static final int T__20=20;
+    public static final int T__21=21;
 
     // delegates
     // delegators
@@ -137,7 +141,7 @@ public class InternalDslParser extends AbstractInternalAntlrParser {
                 int alt1=2;
                 int LA1_0 = input.LA(1);
 
-                if ( (LA1_0==RULE_NOUN) ) {
+                if ( (LA1_0==RULE_NOMEN) ) {
                     alt1=1;
                 }
 
@@ -322,7 +326,7 @@ public class InternalDslParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,15,FOLLOW_6); 
+            otherlv_2=(Token)match(input,19,FOLLOW_6); 
 
             			newLeafNode(otherlv_2, grammarAccess.getStoryAccess().getUmKeyword_2());
             		
@@ -357,15 +361,15 @@ public class InternalDslParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_4=(Token)match(input,16,FOLLOW_8); 
+            otherlv_4=(Token)match(input,20,FOLLOW_8); 
 
             			newLeafNode(otherlv_4, grammarAccess.getStoryAccess().getMöchteKeyword_4());
             		
-            otherlv_5=(Token)match(input,17,FOLLOW_9); 
+            otherlv_5=(Token)match(input,21,FOLLOW_9); 
 
             			newLeafNode(otherlv_5, grammarAccess.getStoryAccess().getIchKeyword_5());
             		
-            otherlv_6=(Token)match(input,18,FOLLOW_6); 
+            otherlv_6=(Token)match(input,22,FOLLOW_6); 
 
             			newLeafNode(otherlv_6, grammarAccess.getStoryAccess().getAlsKeyword_6());
             		
@@ -431,7 +435,7 @@ public class InternalDslParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_9=(Token)match(input,19,FOLLOW_2); 
+            otherlv_9=(Token)match(input,23,FOLLOW_2); 
 
             			newLeafNode(otherlv_9, grammarAccess.getStoryAccess().getFullStopKeyword_9());
             		
@@ -494,7 +498,7 @@ public class InternalDslParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleTitle"
-    // InternalDsl.g:240:1: ruleTitle returns [EObject current=null] : ( ( (lv_noun_0_0= RULE_NOUN ) ) ( (lv_verb_1_0= RULE_VERB_INFINTIV ) ) ) ;
+    // InternalDsl.g:240:1: ruleTitle returns [EObject current=null] : ( ( (lv_noun_0_0= RULE_NOMEN ) ) ( (lv_verb_1_0= RULE_VERB_INFINITIV ) ) ) ;
     public final EObject ruleTitle() throws RecognitionException {
         EObject current = null;
 
@@ -505,21 +509,21 @@ public class InternalDslParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalDsl.g:246:2: ( ( ( (lv_noun_0_0= RULE_NOUN ) ) ( (lv_verb_1_0= RULE_VERB_INFINTIV ) ) ) )
-            // InternalDsl.g:247:2: ( ( (lv_noun_0_0= RULE_NOUN ) ) ( (lv_verb_1_0= RULE_VERB_INFINTIV ) ) )
+            // InternalDsl.g:246:2: ( ( ( (lv_noun_0_0= RULE_NOMEN ) ) ( (lv_verb_1_0= RULE_VERB_INFINITIV ) ) ) )
+            // InternalDsl.g:247:2: ( ( (lv_noun_0_0= RULE_NOMEN ) ) ( (lv_verb_1_0= RULE_VERB_INFINITIV ) ) )
             {
-            // InternalDsl.g:247:2: ( ( (lv_noun_0_0= RULE_NOUN ) ) ( (lv_verb_1_0= RULE_VERB_INFINTIV ) ) )
-            // InternalDsl.g:248:3: ( (lv_noun_0_0= RULE_NOUN ) ) ( (lv_verb_1_0= RULE_VERB_INFINTIV ) )
+            // InternalDsl.g:247:2: ( ( (lv_noun_0_0= RULE_NOMEN ) ) ( (lv_verb_1_0= RULE_VERB_INFINITIV ) ) )
+            // InternalDsl.g:248:3: ( (lv_noun_0_0= RULE_NOMEN ) ) ( (lv_verb_1_0= RULE_VERB_INFINITIV ) )
             {
-            // InternalDsl.g:248:3: ( (lv_noun_0_0= RULE_NOUN ) )
-            // InternalDsl.g:249:4: (lv_noun_0_0= RULE_NOUN )
+            // InternalDsl.g:248:3: ( (lv_noun_0_0= RULE_NOMEN ) )
+            // InternalDsl.g:249:4: (lv_noun_0_0= RULE_NOMEN )
             {
-            // InternalDsl.g:249:4: (lv_noun_0_0= RULE_NOUN )
-            // InternalDsl.g:250:5: lv_noun_0_0= RULE_NOUN
+            // InternalDsl.g:249:4: (lv_noun_0_0= RULE_NOMEN )
+            // InternalDsl.g:250:5: lv_noun_0_0= RULE_NOMEN
             {
-            lv_noun_0_0=(Token)match(input,RULE_NOUN,FOLLOW_11); 
+            lv_noun_0_0=(Token)match(input,RULE_NOMEN,FOLLOW_11); 
 
-            					newLeafNode(lv_noun_0_0, grammarAccess.getTitleAccess().getNounNOUNTerminalRuleCall_0_0());
+            					newLeafNode(lv_noun_0_0, grammarAccess.getTitleAccess().getNounNOMENTerminalRuleCall_0_0());
             				
 
             					if (current==null) {
@@ -529,7 +533,7 @@ public class InternalDslParser extends AbstractInternalAntlrParser {
             						current,
             						"noun",
             						lv_noun_0_0,
-            						"de.htwdd.sf.beleg.s83765s83768.Dsl.NOUN");
+            						"de.htwdd.sf.beleg.s83765s83768.Dsl.NOMEN");
             				
 
             }
@@ -537,15 +541,15 @@ public class InternalDslParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalDsl.g:266:3: ( (lv_verb_1_0= RULE_VERB_INFINTIV ) )
-            // InternalDsl.g:267:4: (lv_verb_1_0= RULE_VERB_INFINTIV )
+            // InternalDsl.g:266:3: ( (lv_verb_1_0= RULE_VERB_INFINITIV ) )
+            // InternalDsl.g:267:4: (lv_verb_1_0= RULE_VERB_INFINITIV )
             {
-            // InternalDsl.g:267:4: (lv_verb_1_0= RULE_VERB_INFINTIV )
-            // InternalDsl.g:268:5: lv_verb_1_0= RULE_VERB_INFINTIV
+            // InternalDsl.g:267:4: (lv_verb_1_0= RULE_VERB_INFINITIV )
+            // InternalDsl.g:268:5: lv_verb_1_0= RULE_VERB_INFINITIV
             {
-            lv_verb_1_0=(Token)match(input,RULE_VERB_INFINTIV,FOLLOW_2); 
+            lv_verb_1_0=(Token)match(input,RULE_VERB_INFINITIV,FOLLOW_2); 
 
-            					newLeafNode(lv_verb_1_0, grammarAccess.getTitleAccess().getVerbVERB_INFINTIVTerminalRuleCall_1_0());
+            					newLeafNode(lv_verb_1_0, grammarAccess.getTitleAccess().getVerbVERB_INFINITIVTerminalRuleCall_1_0());
             				
 
             					if (current==null) {
@@ -555,7 +559,7 @@ public class InternalDslParser extends AbstractInternalAntlrParser {
             						current,
             						"verb",
             						lv_verb_1_0,
-            						"de.htwdd.sf.beleg.s83765s83768.Dsl.VERB_INFINTIV");
+            						"de.htwdd.sf.beleg.s83765s83768.Dsl.VERB_INFINITIV");
             				
 
             }
@@ -622,7 +626,7 @@ public class InternalDslParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleBenefit"
-    // InternalDsl.g:295:1: ruleBenefit returns [EObject current=null] : ( ( (lv_noun_0_0= RULE_NOUN ) ) ( (lv_pzvi_1_0= RULE_PREFIX_ZU_VERB_INFINTIV ) ) ) ;
+    // InternalDsl.g:295:1: ruleBenefit returns [EObject current=null] : ( ( (lv_noun_0_0= RULE_NOMEN ) ) ( (lv_pzvi_1_0= RULE_PREFIX_ZU_VERB_INFINITIV ) ) ) ;
     public final EObject ruleBenefit() throws RecognitionException {
         EObject current = null;
 
@@ -633,21 +637,21 @@ public class InternalDslParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalDsl.g:301:2: ( ( ( (lv_noun_0_0= RULE_NOUN ) ) ( (lv_pzvi_1_0= RULE_PREFIX_ZU_VERB_INFINTIV ) ) ) )
-            // InternalDsl.g:302:2: ( ( (lv_noun_0_0= RULE_NOUN ) ) ( (lv_pzvi_1_0= RULE_PREFIX_ZU_VERB_INFINTIV ) ) )
+            // InternalDsl.g:301:2: ( ( ( (lv_noun_0_0= RULE_NOMEN ) ) ( (lv_pzvi_1_0= RULE_PREFIX_ZU_VERB_INFINITIV ) ) ) )
+            // InternalDsl.g:302:2: ( ( (lv_noun_0_0= RULE_NOMEN ) ) ( (lv_pzvi_1_0= RULE_PREFIX_ZU_VERB_INFINITIV ) ) )
             {
-            // InternalDsl.g:302:2: ( ( (lv_noun_0_0= RULE_NOUN ) ) ( (lv_pzvi_1_0= RULE_PREFIX_ZU_VERB_INFINTIV ) ) )
-            // InternalDsl.g:303:3: ( (lv_noun_0_0= RULE_NOUN ) ) ( (lv_pzvi_1_0= RULE_PREFIX_ZU_VERB_INFINTIV ) )
+            // InternalDsl.g:302:2: ( ( (lv_noun_0_0= RULE_NOMEN ) ) ( (lv_pzvi_1_0= RULE_PREFIX_ZU_VERB_INFINITIV ) ) )
+            // InternalDsl.g:303:3: ( (lv_noun_0_0= RULE_NOMEN ) ) ( (lv_pzvi_1_0= RULE_PREFIX_ZU_VERB_INFINITIV ) )
             {
-            // InternalDsl.g:303:3: ( (lv_noun_0_0= RULE_NOUN ) )
-            // InternalDsl.g:304:4: (lv_noun_0_0= RULE_NOUN )
+            // InternalDsl.g:303:3: ( (lv_noun_0_0= RULE_NOMEN ) )
+            // InternalDsl.g:304:4: (lv_noun_0_0= RULE_NOMEN )
             {
-            // InternalDsl.g:304:4: (lv_noun_0_0= RULE_NOUN )
-            // InternalDsl.g:305:5: lv_noun_0_0= RULE_NOUN
+            // InternalDsl.g:304:4: (lv_noun_0_0= RULE_NOMEN )
+            // InternalDsl.g:305:5: lv_noun_0_0= RULE_NOMEN
             {
-            lv_noun_0_0=(Token)match(input,RULE_NOUN,FOLLOW_12); 
+            lv_noun_0_0=(Token)match(input,RULE_NOMEN,FOLLOW_12); 
 
-            					newLeafNode(lv_noun_0_0, grammarAccess.getBenefitAccess().getNounNOUNTerminalRuleCall_0_0());
+            					newLeafNode(lv_noun_0_0, grammarAccess.getBenefitAccess().getNounNOMENTerminalRuleCall_0_0());
             				
 
             					if (current==null) {
@@ -657,7 +661,7 @@ public class InternalDslParser extends AbstractInternalAntlrParser {
             						current,
             						"noun",
             						lv_noun_0_0,
-            						"de.htwdd.sf.beleg.s83765s83768.Dsl.NOUN");
+            						"de.htwdd.sf.beleg.s83765s83768.Dsl.NOMEN");
             				
 
             }
@@ -665,15 +669,15 @@ public class InternalDslParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalDsl.g:321:3: ( (lv_pzvi_1_0= RULE_PREFIX_ZU_VERB_INFINTIV ) )
-            // InternalDsl.g:322:4: (lv_pzvi_1_0= RULE_PREFIX_ZU_VERB_INFINTIV )
+            // InternalDsl.g:321:3: ( (lv_pzvi_1_0= RULE_PREFIX_ZU_VERB_INFINITIV ) )
+            // InternalDsl.g:322:4: (lv_pzvi_1_0= RULE_PREFIX_ZU_VERB_INFINITIV )
             {
-            // InternalDsl.g:322:4: (lv_pzvi_1_0= RULE_PREFIX_ZU_VERB_INFINTIV )
-            // InternalDsl.g:323:5: lv_pzvi_1_0= RULE_PREFIX_ZU_VERB_INFINTIV
+            // InternalDsl.g:322:4: (lv_pzvi_1_0= RULE_PREFIX_ZU_VERB_INFINITIV )
+            // InternalDsl.g:323:5: lv_pzvi_1_0= RULE_PREFIX_ZU_VERB_INFINITIV
             {
-            lv_pzvi_1_0=(Token)match(input,RULE_PREFIX_ZU_VERB_INFINTIV,FOLLOW_2); 
+            lv_pzvi_1_0=(Token)match(input,RULE_PREFIX_ZU_VERB_INFINITIV,FOLLOW_2); 
 
-            					newLeafNode(lv_pzvi_1_0, grammarAccess.getBenefitAccess().getPzviPREFIX_ZU_VERB_INFINTIVTerminalRuleCall_1_0());
+            					newLeafNode(lv_pzvi_1_0, grammarAccess.getBenefitAccess().getPzviPREFIX_ZU_VERB_INFINITIVTerminalRuleCall_1_0());
             				
 
             					if (current==null) {
@@ -683,7 +687,7 @@ public class InternalDslParser extends AbstractInternalAntlrParser {
             						current,
             						"pzvi",
             						lv_pzvi_1_0,
-            						"de.htwdd.sf.beleg.s83765s83768.Dsl.PREFIX_ZU_VERB_INFINTIV");
+            						"de.htwdd.sf.beleg.s83765s83768.Dsl.PREFIX_ZU_VERB_INFINITIV");
             				
 
             }
@@ -750,7 +754,7 @@ public class InternalDslParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleRole"
-    // InternalDsl.g:350:1: ruleRole returns [EObject current=null] : ( (lv_noun_0_0= RULE_NOUN ) ) ;
+    // InternalDsl.g:350:1: ruleRole returns [EObject current=null] : ( (lv_noun_0_0= RULE_NOMEN ) ) ;
     public final EObject ruleRole() throws RecognitionException {
         EObject current = null;
 
@@ -760,18 +764,18 @@ public class InternalDslParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalDsl.g:356:2: ( ( (lv_noun_0_0= RULE_NOUN ) ) )
-            // InternalDsl.g:357:2: ( (lv_noun_0_0= RULE_NOUN ) )
+            // InternalDsl.g:356:2: ( ( (lv_noun_0_0= RULE_NOMEN ) ) )
+            // InternalDsl.g:357:2: ( (lv_noun_0_0= RULE_NOMEN ) )
             {
-            // InternalDsl.g:357:2: ( (lv_noun_0_0= RULE_NOUN ) )
-            // InternalDsl.g:358:3: (lv_noun_0_0= RULE_NOUN )
+            // InternalDsl.g:357:2: ( (lv_noun_0_0= RULE_NOMEN ) )
+            // InternalDsl.g:358:3: (lv_noun_0_0= RULE_NOMEN )
             {
-            // InternalDsl.g:358:3: (lv_noun_0_0= RULE_NOUN )
-            // InternalDsl.g:359:4: lv_noun_0_0= RULE_NOUN
+            // InternalDsl.g:358:3: (lv_noun_0_0= RULE_NOMEN )
+            // InternalDsl.g:359:4: lv_noun_0_0= RULE_NOMEN
             {
-            lv_noun_0_0=(Token)match(input,RULE_NOUN,FOLLOW_2); 
+            lv_noun_0_0=(Token)match(input,RULE_NOMEN,FOLLOW_2); 
 
-            				newLeafNode(lv_noun_0_0, grammarAccess.getRoleAccess().getNounNOUNTerminalRuleCall_0());
+            				newLeafNode(lv_noun_0_0, grammarAccess.getRoleAccess().getNounNOMENTerminalRuleCall_0());
             			
 
             				if (current==null) {
@@ -781,7 +785,7 @@ public class InternalDslParser extends AbstractInternalAntlrParser {
             					current,
             					"noun",
             					lv_noun_0_0,
-            					"de.htwdd.sf.beleg.s83765s83768.Dsl.NOUN");
+            					"de.htwdd.sf.beleg.s83765s83768.Dsl.NOMEN");
             			
 
             }
@@ -845,7 +849,7 @@ public class InternalDslParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleAction"
-    // InternalDsl.g:385:1: ruleAction returns [EObject current=null] : ( ( (lv_noun_0_0= RULE_NOUN ) ) ( (lv_vi_1_0= RULE_VERB_INFINTIV ) ) ) ;
+    // InternalDsl.g:385:1: ruleAction returns [EObject current=null] : ( ( (lv_noun_0_0= RULE_NOMEN ) ) ( (lv_vi_1_0= RULE_VERB_INFINITIV ) ) ) ;
     public final EObject ruleAction() throws RecognitionException {
         EObject current = null;
 
@@ -856,21 +860,21 @@ public class InternalDslParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalDsl.g:391:2: ( ( ( (lv_noun_0_0= RULE_NOUN ) ) ( (lv_vi_1_0= RULE_VERB_INFINTIV ) ) ) )
-            // InternalDsl.g:392:2: ( ( (lv_noun_0_0= RULE_NOUN ) ) ( (lv_vi_1_0= RULE_VERB_INFINTIV ) ) )
+            // InternalDsl.g:391:2: ( ( ( (lv_noun_0_0= RULE_NOMEN ) ) ( (lv_vi_1_0= RULE_VERB_INFINITIV ) ) ) )
+            // InternalDsl.g:392:2: ( ( (lv_noun_0_0= RULE_NOMEN ) ) ( (lv_vi_1_0= RULE_VERB_INFINITIV ) ) )
             {
-            // InternalDsl.g:392:2: ( ( (lv_noun_0_0= RULE_NOUN ) ) ( (lv_vi_1_0= RULE_VERB_INFINTIV ) ) )
-            // InternalDsl.g:393:3: ( (lv_noun_0_0= RULE_NOUN ) ) ( (lv_vi_1_0= RULE_VERB_INFINTIV ) )
+            // InternalDsl.g:392:2: ( ( (lv_noun_0_0= RULE_NOMEN ) ) ( (lv_vi_1_0= RULE_VERB_INFINITIV ) ) )
+            // InternalDsl.g:393:3: ( (lv_noun_0_0= RULE_NOMEN ) ) ( (lv_vi_1_0= RULE_VERB_INFINITIV ) )
             {
-            // InternalDsl.g:393:3: ( (lv_noun_0_0= RULE_NOUN ) )
-            // InternalDsl.g:394:4: (lv_noun_0_0= RULE_NOUN )
+            // InternalDsl.g:393:3: ( (lv_noun_0_0= RULE_NOMEN ) )
+            // InternalDsl.g:394:4: (lv_noun_0_0= RULE_NOMEN )
             {
-            // InternalDsl.g:394:4: (lv_noun_0_0= RULE_NOUN )
-            // InternalDsl.g:395:5: lv_noun_0_0= RULE_NOUN
+            // InternalDsl.g:394:4: (lv_noun_0_0= RULE_NOMEN )
+            // InternalDsl.g:395:5: lv_noun_0_0= RULE_NOMEN
             {
-            lv_noun_0_0=(Token)match(input,RULE_NOUN,FOLLOW_11); 
+            lv_noun_0_0=(Token)match(input,RULE_NOMEN,FOLLOW_11); 
 
-            					newLeafNode(lv_noun_0_0, grammarAccess.getActionAccess().getNounNOUNTerminalRuleCall_0_0());
+            					newLeafNode(lv_noun_0_0, grammarAccess.getActionAccess().getNounNOMENTerminalRuleCall_0_0());
             				
 
             					if (current==null) {
@@ -880,7 +884,7 @@ public class InternalDslParser extends AbstractInternalAntlrParser {
             						current,
             						"noun",
             						lv_noun_0_0,
-            						"de.htwdd.sf.beleg.s83765s83768.Dsl.NOUN");
+            						"de.htwdd.sf.beleg.s83765s83768.Dsl.NOMEN");
             				
 
             }
@@ -888,15 +892,15 @@ public class InternalDslParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalDsl.g:411:3: ( (lv_vi_1_0= RULE_VERB_INFINTIV ) )
-            // InternalDsl.g:412:4: (lv_vi_1_0= RULE_VERB_INFINTIV )
+            // InternalDsl.g:411:3: ( (lv_vi_1_0= RULE_VERB_INFINITIV ) )
+            // InternalDsl.g:412:4: (lv_vi_1_0= RULE_VERB_INFINITIV )
             {
-            // InternalDsl.g:412:4: (lv_vi_1_0= RULE_VERB_INFINTIV )
-            // InternalDsl.g:413:5: lv_vi_1_0= RULE_VERB_INFINTIV
+            // InternalDsl.g:412:4: (lv_vi_1_0= RULE_VERB_INFINITIV )
+            // InternalDsl.g:413:5: lv_vi_1_0= RULE_VERB_INFINITIV
             {
-            lv_vi_1_0=(Token)match(input,RULE_VERB_INFINTIV,FOLLOW_2); 
+            lv_vi_1_0=(Token)match(input,RULE_VERB_INFINITIV,FOLLOW_2); 
 
-            					newLeafNode(lv_vi_1_0, grammarAccess.getActionAccess().getViVERB_INFINTIVTerminalRuleCall_1_0());
+            					newLeafNode(lv_vi_1_0, grammarAccess.getActionAccess().getViVERB_INFINITIVTerminalRuleCall_1_0());
             				
 
             					if (current==null) {
@@ -906,7 +910,7 @@ public class InternalDslParser extends AbstractInternalAntlrParser {
             						current,
             						"vi",
             						lv_vi_1_0,
-            						"de.htwdd.sf.beleg.s83765s83768.Dsl.VERB_INFINTIV");
+            						"de.htwdd.sf.beleg.s83765s83768.Dsl.VERB_INFINITIV");
             				
 
             }
@@ -944,12 +948,12 @@ public class InternalDslParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_2 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_3 = new BitSet(new long[]{0x0000000000000022L});
     public static final BitSet FOLLOW_4 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_5 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_5 = new BitSet(new long[]{0x0000000000080000L});
     public static final BitSet FOLLOW_6 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000000000800000L});
     public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0000000000000040L});
     public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x0000000000000080L});
 

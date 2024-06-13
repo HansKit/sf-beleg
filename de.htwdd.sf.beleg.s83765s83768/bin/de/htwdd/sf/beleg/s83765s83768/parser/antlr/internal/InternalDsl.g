@@ -247,9 +247,9 @@ ruleTitle returns [EObject current=null]
 	(
 		(
 			(
-				lv_noun_0_0=RULE_NOUN
+				lv_noun_0_0=RULE_NOMEN
 				{
-					newLeafNode(lv_noun_0_0, grammarAccess.getTitleAccess().getNounNOUNTerminalRuleCall_0_0());
+					newLeafNode(lv_noun_0_0, grammarAccess.getTitleAccess().getNounNOMENTerminalRuleCall_0_0());
 				}
 				{
 					if ($current==null) {
@@ -259,15 +259,15 @@ ruleTitle returns [EObject current=null]
 						$current,
 						"noun",
 						lv_noun_0_0,
-						"de.htwdd.sf.beleg.s83765s83768.Dsl.NOUN");
+						"de.htwdd.sf.beleg.s83765s83768.Dsl.NOMEN");
 				}
 			)
 		)
 		(
 			(
-				lv_verb_1_0=RULE_VERB_INFINTIV
+				lv_verb_1_0=RULE_VERB_INFINITIV
 				{
-					newLeafNode(lv_verb_1_0, grammarAccess.getTitleAccess().getVerbVERB_INFINTIVTerminalRuleCall_1_0());
+					newLeafNode(lv_verb_1_0, grammarAccess.getTitleAccess().getVerbVERB_INFINITIVTerminalRuleCall_1_0());
 				}
 				{
 					if ($current==null) {
@@ -277,7 +277,7 @@ ruleTitle returns [EObject current=null]
 						$current,
 						"verb",
 						lv_verb_1_0,
-						"de.htwdd.sf.beleg.s83765s83768.Dsl.VERB_INFINTIV");
+						"de.htwdd.sf.beleg.s83765s83768.Dsl.VERB_INFINITIV");
 				}
 			)
 		)
@@ -302,9 +302,9 @@ ruleBenefit returns [EObject current=null]
 	(
 		(
 			(
-				lv_noun_0_0=RULE_NOUN
+				lv_noun_0_0=RULE_NOMEN
 				{
-					newLeafNode(lv_noun_0_0, grammarAccess.getBenefitAccess().getNounNOUNTerminalRuleCall_0_0());
+					newLeafNode(lv_noun_0_0, grammarAccess.getBenefitAccess().getNounNOMENTerminalRuleCall_0_0());
 				}
 				{
 					if ($current==null) {
@@ -314,15 +314,15 @@ ruleBenefit returns [EObject current=null]
 						$current,
 						"noun",
 						lv_noun_0_0,
-						"de.htwdd.sf.beleg.s83765s83768.Dsl.NOUN");
+						"de.htwdd.sf.beleg.s83765s83768.Dsl.NOMEN");
 				}
 			)
 		)
 		(
 			(
-				lv_pzvi_1_0=RULE_PREFIX_ZU_VERB_INFINTIV
+				lv_pzvi_1_0=RULE_PREFIX_ZU_VERB_INFINITIV
 				{
-					newLeafNode(lv_pzvi_1_0, grammarAccess.getBenefitAccess().getPzviPREFIX_ZU_VERB_INFINTIVTerminalRuleCall_1_0());
+					newLeafNode(lv_pzvi_1_0, grammarAccess.getBenefitAccess().getPzviPREFIX_ZU_VERB_INFINITIVTerminalRuleCall_1_0());
 				}
 				{
 					if ($current==null) {
@@ -332,7 +332,7 @@ ruleBenefit returns [EObject current=null]
 						$current,
 						"pzvi",
 						lv_pzvi_1_0,
-						"de.htwdd.sf.beleg.s83765s83768.Dsl.PREFIX_ZU_VERB_INFINTIV");
+						"de.htwdd.sf.beleg.s83765s83768.Dsl.PREFIX_ZU_VERB_INFINITIV");
 				}
 			)
 		)
@@ -356,9 +356,9 @@ ruleRole returns [EObject current=null]
 }:
 	(
 		(
-			lv_noun_0_0=RULE_NOUN
+			lv_noun_0_0=RULE_NOMEN
 			{
-				newLeafNode(lv_noun_0_0, grammarAccess.getRoleAccess().getNounNOUNTerminalRuleCall_0());
+				newLeafNode(lv_noun_0_0, grammarAccess.getRoleAccess().getNounNOMENTerminalRuleCall_0());
 			}
 			{
 				if ($current==null) {
@@ -368,7 +368,7 @@ ruleRole returns [EObject current=null]
 					$current,
 					"noun",
 					lv_noun_0_0,
-					"de.htwdd.sf.beleg.s83765s83768.Dsl.NOUN");
+					"de.htwdd.sf.beleg.s83765s83768.Dsl.NOMEN");
 			}
 		)
 	)
@@ -392,9 +392,9 @@ ruleAction returns [EObject current=null]
 	(
 		(
 			(
-				lv_noun_0_0=RULE_NOUN
+				lv_noun_0_0=RULE_NOMEN
 				{
-					newLeafNode(lv_noun_0_0, grammarAccess.getActionAccess().getNounNOUNTerminalRuleCall_0_0());
+					newLeafNode(lv_noun_0_0, grammarAccess.getActionAccess().getNounNOMENTerminalRuleCall_0_0());
 				}
 				{
 					if ($current==null) {
@@ -404,15 +404,15 @@ ruleAction returns [EObject current=null]
 						$current,
 						"noun",
 						lv_noun_0_0,
-						"de.htwdd.sf.beleg.s83765s83768.Dsl.NOUN");
+						"de.htwdd.sf.beleg.s83765s83768.Dsl.NOMEN");
 				}
 			)
 		)
 		(
 			(
-				lv_vi_1_0=RULE_VERB_INFINTIV
+				lv_vi_1_0=RULE_VERB_INFINITIV
 				{
-					newLeafNode(lv_vi_1_0, grammarAccess.getActionAccess().getViVERB_INFINTIVTerminalRuleCall_1_0());
+					newLeafNode(lv_vi_1_0, grammarAccess.getActionAccess().getViVERB_INFINITIVTerminalRuleCall_1_0());
 				}
 				{
 					if ($current==null) {
@@ -422,18 +422,26 @@ ruleAction returns [EObject current=null]
 						$current,
 						"vi",
 						lv_vi_1_0,
-						"de.htwdd.sf.beleg.s83765s83768.Dsl.VERB_INFINTIV");
+						"de.htwdd.sf.beleg.s83765s83768.Dsl.VERB_INFINITIV");
 				}
 			)
 		)
 	)
 ;
 
-RULE_NOUN : ('A'..'Z'|'\u00C4'|'\u00D6'|'\u00DC') ('a'..'z'|'\u00E4'|'\u00F6'|'\u00FC')*;
+RULE_NOMEN : ('A'..'Z'|'\u00C4'|'\u00D6'|'\u00DC') ('a'..'z'|'\u00E4'|'\u00F6'|'\u00FC')*;
 
-RULE_PREFIX_ZU_VERB_INFINTIV : ('a'..'z'|'\u00E4'|'\u00F6'|'\u00FC')* 'zu' ('a'..'y'|'\u00E4'|'\u00F6'|'\u00FC'|'z' ('a'..'t'|'v'..'y'|'\u00E4'|'\u00F6'|'\u00FC'))* 'en' ',';
+fragment RULE_VERB_ENDUNG : ('en'|'eln'|'ern'|'tun'|'sein');
 
-RULE_VERB_INFINTIV : ('a'..'y'|'\u00E4'|'\u00F6'|'\u00FC'|'z' ('a'..'t'|'v'..'y'|'\u00E4'|'\u00F6'|'\u00FC'))+ 'z'* 'en';
+RULE_PREFIX_ZU_VERB_INFINITIV : (RULE_VALIDER_ZU_PREFIX|RULE_WORT_TEIL_OHNE_ZU+) 'zu' RULE_WORT_TEIL_OHNE_ZU+ RULE_VERB_ENDUNG ',';
+
+fragment RULE_VALIDER_ZU_PREFIX : ('zusammen'|'zur\u00FCck');
+
+fragment RULE_Z_UND_NICHT_U : 'z' ('a'..'t'|'v'..'y'|'\u00E4'|'\u00F6'|'\u00FC');
+
+fragment RULE_WORT_TEIL_OHNE_ZU : (('a'..'y'|'\u00E4'|'\u00F6'|'\u00FC')|RULE_Z_UND_NICHT_U);
+
+RULE_VERB_INFINITIV : RULE_VALIDER_ZU_PREFIX? RULE_WORT_TEIL_OHNE_ZU+ RULE_VERB_ENDUNG;
 
 RULE_DOPPELPUNKT : ':';
 

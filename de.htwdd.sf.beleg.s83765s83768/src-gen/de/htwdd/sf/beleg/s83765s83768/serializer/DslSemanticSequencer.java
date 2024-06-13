@@ -65,7 +65,7 @@ public class DslSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	 *     Action returns Action
 	 *
 	 * Constraint:
-	 *     (noun=NOUN vi=VERB_INFINTIV)
+	 *     (noun=NOMEN vi=VERB_INFINITIV)
 	 * </pre>
 	 */
 	protected void sequence_Action(ISerializationContext context, de.htwdd.sf.beleg.s83765s83768.dsl.Action semanticObject) {
@@ -76,8 +76,8 @@ public class DslSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, DslPackage.Literals.ACTION__VI));
 		}
 		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
-		feeder.accept(grammarAccess.getActionAccess().getNounNOUNTerminalRuleCall_0_0(), semanticObject.getNoun());
-		feeder.accept(grammarAccess.getActionAccess().getViVERB_INFINTIVTerminalRuleCall_1_0(), semanticObject.getVi());
+		feeder.accept(grammarAccess.getActionAccess().getNounNOMENTerminalRuleCall_0_0(), semanticObject.getNoun());
+		feeder.accept(grammarAccess.getActionAccess().getViVERB_INFINITIVTerminalRuleCall_1_0(), semanticObject.getVi());
 		feeder.finish();
 	}
 	
@@ -88,7 +88,7 @@ public class DslSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	 *     Benefit returns Benefit
 	 *
 	 * Constraint:
-	 *     (noun=NOUN pzvi=PREFIX_ZU_VERB_INFINTIV)
+	 *     (noun=NOMEN pzvi=PREFIX_ZU_VERB_INFINITIV)
 	 * </pre>
 	 */
 	protected void sequence_Benefit(ISerializationContext context, Benefit semanticObject) {
@@ -99,8 +99,8 @@ public class DslSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, DslPackage.Literals.BENEFIT__PZVI));
 		}
 		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
-		feeder.accept(grammarAccess.getBenefitAccess().getNounNOUNTerminalRuleCall_0_0(), semanticObject.getNoun());
-		feeder.accept(grammarAccess.getBenefitAccess().getPzviPREFIX_ZU_VERB_INFINTIVTerminalRuleCall_1_0(), semanticObject.getPzvi());
+		feeder.accept(grammarAccess.getBenefitAccess().getNounNOMENTerminalRuleCall_0_0(), semanticObject.getNoun());
+		feeder.accept(grammarAccess.getBenefitAccess().getPzviPREFIX_ZU_VERB_INFINITIVTerminalRuleCall_1_0(), semanticObject.getPzvi());
 		feeder.finish();
 	}
 	
@@ -125,7 +125,7 @@ public class DslSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	 *     Role returns Role
 	 *
 	 * Constraint:
-	 *     noun=NOUN
+	 *     noun=NOMEN
 	 * </pre>
 	 */
 	protected void sequence_Role(ISerializationContext context, Role semanticObject) {
@@ -134,7 +134,7 @@ public class DslSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, DslPackage.Literals.ROLE__NOUN));
 		}
 		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
-		feeder.accept(grammarAccess.getRoleAccess().getNounNOUNTerminalRuleCall_0(), semanticObject.getNoun());
+		feeder.accept(grammarAccess.getRoleAccess().getNounNOMENTerminalRuleCall_0(), semanticObject.getNoun());
 		feeder.finish();
 	}
 	
@@ -177,7 +177,7 @@ public class DslSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 	 *     Title returns Title
 	 *
 	 * Constraint:
-	 *     (noun=NOUN verb=VERB_INFINTIV)
+	 *     (noun=NOMEN verb=VERB_INFINITIV)
 	 * </pre>
 	 */
 	protected void sequence_Title(ISerializationContext context, Title semanticObject) {
@@ -188,8 +188,8 @@ public class DslSemanticSequencer extends AbstractDelegatingSemanticSequencer {
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, DslPackage.Literals.TITLE__VERB));
 		}
 		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
-		feeder.accept(grammarAccess.getTitleAccess().getNounNOUNTerminalRuleCall_0_0(), semanticObject.getNoun());
-		feeder.accept(grammarAccess.getTitleAccess().getVerbVERB_INFINTIVTerminalRuleCall_1_0(), semanticObject.getVerb());
+		feeder.accept(grammarAccess.getTitleAccess().getNounNOMENTerminalRuleCall_0_0(), semanticObject.getNoun());
+		feeder.accept(grammarAccess.getTitleAccess().getVerbVERB_INFINITIVTerminalRuleCall_1_0(), semanticObject.getVerb());
 		feeder.finish();
 	}
 	

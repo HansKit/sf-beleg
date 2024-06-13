@@ -10,7 +10,7 @@ import de.htwdd.sf.beleg.s83765s83768.dsl.Model
 import org.eclipse.emf.ecore.resource.Resource
 
 class DslGenerator extends AbstractGenerator {
-	//dirty walkaround um aus einem mit "zu" erweiterten Infinitiv einen reinen Infinitv zu machen
+	//dirty workaround um aus einem mit "zu" erweiterten Infinitiv einen reinen Infinitv zu machen
     override doGenerate(Resource resource, IFileSystemAccess2 fsa, IGeneratorContext context) {
         val model = resource.contents.get(0) as Model
         val xmlContent = '''
